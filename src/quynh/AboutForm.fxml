@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="166.0" prefWidth="379.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quynh.AboutFormController">
+   <children>
+      <Button fx:id="buttonClose" layoutX="263.0" layoutY="121.0" mnemonicParsing="false" onAction="#handleButtonClose" prefHeight="31.0" prefWidth="102.0" text="Close" />
+      <Label alignment="CENTER" layoutX="145.0" layoutY="26.0" text="Sheridan Course Inventory v1.0&#10;Copyright 2018. Quynh Dinh" />
+      <ImageView fitHeight="127.0" fitWidth="81.0" layoutX="36.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@SheridanS_indigo_700x990.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

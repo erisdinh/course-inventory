@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane id="AnchorPane" prefHeight="260.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quynh.AddFormController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="21.0" prefWidth="306.0" text="Enter new Course ID, title, credit and category" />
+      <GridPane layoutX="31.0" layoutY="47.0" prefHeight="158.0" prefWidth="540.0" AnchorPane.leftAnchor="31.0" AnchorPane.rightAnchor="29.0" AnchorPane.topAnchor="47.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="262.0" minWidth="10.0" prefWidth="88.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="487.0" minWidth="10.0" prefWidth="452.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="46.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="85.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="113.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="109.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="ID:" />
+            <Label text="Title:" GridPane.rowIndex="1" />
+            <Label text="Credit:" GridPane.rowIndex="2" />
+            <Label text="Category" GridPane.rowIndex="3" />
+            <TextField fx:id="textFieldID" prefHeight="31.0" prefWidth="264.0" GridPane.columnIndex="1" />
+            <TextField fx:id="textFieldTitle" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="textFieldCredit" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <ComboBox fx:id="comboBoxCategory" prefHeight="31.0" prefWidth="176.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <Button fx:id="buttonAdd" layoutX="424.0" layoutY="213.0" mnemonicParsing="false" onAction="#handleButtonAdd" prefHeight="31.0" prefWidth="64.0" text="Add" />
+      <Button fx:id="buttonCancel" layoutX="506.0" layoutY="213.0" mnemonicParsing="false" onAction="#handleButtonCancel" prefHeight="31.0" prefWidth="64.0" text="Cancel" />
+   </children>
+</AnchorPane>
